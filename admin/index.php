@@ -64,7 +64,6 @@ incluirTemplate('header');
     <table class="propiedades">
         <thead>
             <tr>
-                <th>ID</th>
                 <th>Nombre</th>
                 <th>Imagen</th>
                 <th>Precio</th>
@@ -75,7 +74,6 @@ incluirTemplate('header');
             <!-- mostrar los resultados -->
             <?php while ($videojuego = mysqli_fetch_assoc($resultadoConsulta)) : ?>
                 <tr>
-                    <td><?php echo $videojuego['id']; ?></td>
                     <td><?php echo $videojuego['nombre']; ?></td>
                     <td><img src="/imagenes/<?php echo $videojuego['imagen']; ?>" class="imagen-tabla"></td>
                     <td><?php echo $videojuego['precio']; ?></td>
